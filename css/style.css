@@ -115,7 +115,7 @@ header nav li .activo {
 
 /*Tambien se podria llama h1 directo "h1 */
 .hero > div h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: "handlee", cursive;
 
 }
@@ -147,6 +147,93 @@ header nav li .activo {
     margin-right: 15px;
     font-size: 1.5em;
 }
+/*Fin hero */
+
+/*Comienzo Main*/ 
+
+section {
+    padding: 50px 0px;  
+}
+
+main section h2{
+    color: black;
+    font-family: "handlee", cursive;
+    text-align: center;
+    font-size: 2em;
+}
+
+main section h2 span{
+    color: #fa573a;
+}
+
+main section .underline{
+    position: relative;
+    width: 9.37em;
+    margin: 0 auto;
+    color: #fa573a;
+}
+
+main section .underline hr{
+    border-color: #fa573a;
+}
+
+main section .underline span{
+    display: block;
+    font-weight: bold; /*Puede ser 700, porque la fuente esta cargada*/
+    position: absolute;
+    top: -7px;
+    left: 69px;
+}
+
+main section .flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+main section .flex article{
+    width: 33%;
+    border-left: 1px solid #333;
+    padding: 0px 25px;
+}
+
+main #ourservices article .icon{
+    color: #fa573a;
+    border: 2px solid #fa573a;
+    padding: 10px;
+    font-size: 120%;
+}
+
+main #ourservices article h3{
+    font-weight: bold;
+    margin: 15px 0px;
+    font-size: 120%;
+}
+
+main #ourservices article p{
+    color: #444;
+}
+
+.fa-truck-moving{
+    transform: rotateY(180deg);
+}
+
+main .enlace{
+    color: #fa573a;
+    font-weight: bold;
+    margin: 20px 0px 0px 0px;
+    display: inline-block;
+}
+
+main .enlace i{
+    margin-left: 0px;
+    transition: .4s;
+}
+
+main .enlace:hover i{
+    margin-left: 15px;
+    transition: .4s;
+}
 
 @media(max-width: 768px)
 {
@@ -158,6 +245,16 @@ header nav li .activo {
     }
     header .submenu .row div:nth-child(3), header .submenu .row div:nth-child(4) {
         text-align: center;
+    }
+    main section .flex article{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    main section .flex article:last-child{
+        width: 100%;
+    }
+    main section .flex article:first-child, main section .flex article:last-child{
+        border-left: 0px;
     }
 }
 
@@ -205,5 +302,12 @@ header nav li .activo {
     }
     .hero{
         height: 450px;
+    }
+
+    main section .flex article{
+        width: 100%;
+        border-left: 0px;
+        border-bottom: 1px solid #333;
+        padding-bottom: 20px;
     }
 }
