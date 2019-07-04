@@ -109,7 +109,7 @@ header nav li .activo {
 }
 
 .hero > div{
-    padding: 15% 10%;
+    padding: 15% 0%;
     color: white;
 }
 
@@ -295,6 +295,7 @@ main .enlace:hover i{
         text-align: center;
         padding: 20px;  
         border-bottom: 1px solid #aaa;
+        margin-right: 0px;
     }
 
     header nav .menu li:last-child{
@@ -309,5 +310,11 @@ main .enlace:hover i{
         border-left: 0px;
         border-bottom: 1px solid #333;
         padding-bottom: 20px;
+    }
+}
+
+@media(max-width: 1100px){
+    .hero>div{
+        padding: 15px 10px;
     }
 }
