@@ -126,7 +126,7 @@ header nav li .activo {
     margin: .8em 0%;
 }
 
-.hero .boton {
+.boton {
     background-color: #fa573a;
     padding: .9em;
     display: inline-block;
@@ -134,7 +134,7 @@ header nav li .activo {
     border: 2px solid #fa573a;
 }
 
-.hero .boton:hover {
+.boton:hover {
     background-color: transparent;
     color: #fa573a;
 }
@@ -188,7 +188,7 @@ main section .underline span{
 main section .flex{
     display: flex;
     flex-wrap: wrap;
-    margin: 40px;
+    margin-top: 40px;
 }
 
 main section .flex article{
@@ -233,6 +233,45 @@ main .enlace i{
 main .enlace:hover i{
     margin-left: 15px;
     transition: .4s;
+}
+
+main #aboutus .columna{
+    width: 50%; 
+    padding: 17px;
+}
+
+main #aboutus .imagen .marco{
+    border: 3px solid #fa573a;
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen .marco img{
+    transform: rotateZ(-10deg);
+    transition: 1s;
+    display: block;
+}
+
+main #aboutus .imagen:hover .marco{
+    transform: rotatez(0deg);
+}
+
+main #aboutus .imagen:hover img{
+    transform: rotatez(0deg);
+}
+
+main #aboutus h3{
+    font-weight: bold;
+    font-size: 110%;
+}
+
+main #aboutus h4{
+    color: #fa573a;
+    margin: 10px 0px;
+}
+
+main #aboutus p{
+    color: #444;
 }
 
 @media(max-width: 768px)
@@ -310,6 +349,20 @@ main .enlace:hover i{
         border-left: 0px;
         border-bottom: 1px solid #333;
         padding-bottom: 20px;
+    }
+
+    main #aboutus .columna{
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    main #aboutus .imagen{
+        width: 80%;
+        margin-left: 15px;
+    }
+
+    main #aboutus .flex{
+        flex-direction: column-reverse;
     }
 }
 
